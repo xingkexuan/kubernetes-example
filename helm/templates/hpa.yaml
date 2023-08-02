@@ -1,4 +1,4 @@
-apiVersion: autoscaling/v2beta2
+apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
   name: frontend
@@ -16,23 +16,3 @@ spec:
       target:
         type: Utilization
         averageUtilization: {{ .Values.frontend.autoscaling.averageUtilization }}
-
----
-apiVersion: autoscaling/v2beta2
-kind: HorizontalPodAutoscaler
-metadata:
-  name: backend
-spec:
-  scaleTargetRef:
-    kind: Deployment
-    name: backend
-    apiVersion: apps/v1
-  minReplicas: 2
-  maxReplicas: 10
-  metrics:
-  - type: Resource
-    resource:
-      name: cpu
-      target:
-        type: Utilization
-        averageUtilization: {{ .Values.backend.autoscaling.averageUtilization }}

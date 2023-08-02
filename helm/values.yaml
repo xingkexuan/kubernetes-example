@@ -1,11 +1,6 @@
 frontend:
-  image: lyzhang1999/frontend
-  tag: '1276e23'
-  autoscaling:
-    averageUtilization: 90
-backend:
-  image: lyzhang1999/backend
-  tag: '1276e23'
+  image: 15080316041/frontend
+  tag: '563cb3e'
   autoscaling:
     averageUtilization: 90
 database:

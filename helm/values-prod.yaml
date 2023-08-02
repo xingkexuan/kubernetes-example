@@ -1,17 +1,11 @@
 frontend:
-  image: lyzhang1999/frontend
-  tag: latest
-  autoscaling:
-    averageUtilization: 50
-
-backend:
-  image: lyzhang1999/backend
+  image: 15080316041/frontend
   tag: latest
   autoscaling:
     averageUtilization: 50
 
 database:
   enabled: false
-  uri: 10.10.10.10
+  uri: 192.168.1.51
   username: external_postgres
   password: external_postgres
