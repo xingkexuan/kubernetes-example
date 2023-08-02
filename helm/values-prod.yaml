@@ -4,6 +4,12 @@ frontend:
   autoscaling:
     averageUtilization: 50
 
+backend:
+  image: 15080316041/backend
+  tag: latest
+  autoscaling:
+    averageUtilization: 50
+
 database:
   enabled: false
   uri: 192.168.1.51
