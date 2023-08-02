@@ -1,11 +1,11 @@
 frontend:
   image: 15080316041/frontend
-  tag: '9998001'
+  tag: 9deb789
   autoscaling:
     averageUtilization: 90
 backend:
   image: 15080316041/backend
-  tag: '9998001'
+  tag: 9deb789
   autoscaling:
     averageUtilization: 90
 database:
@@ -13,4 +13,3 @@ database:
   uri: pg-service
   username: postgres
   password: postgres
-  
