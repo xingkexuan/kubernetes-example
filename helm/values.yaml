@@ -1,11 +1,11 @@
 frontend:
   image: 15080316041/frontend
-  tag: 9deb789
+  tag: 06d2754
   autoscaling:
     averageUtilization: 90
 backend:
   image: 15080316041/backend
-  tag: 9deb789
+  tag: 06d2754
   autoscaling:
     averageUtilization: 90
 database:
