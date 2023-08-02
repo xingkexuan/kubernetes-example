@@ -6,7 +6,7 @@ from flask import request
 
 app = Flask(__name__)
 
-# This keeps the warning messages ssaway
+# This keeps the warning messages ssawaysss
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db_uri = os.environ.get('DATABASE_URI')
 db_username = os.environ.get('DATABASE_USERNAME')
