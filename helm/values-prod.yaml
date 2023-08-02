@@ -12,6 +12,6 @@ backend:
 
 database:
   enabled: false
-  uri: 192.168.1.51
+  uri: 192.168.0.51
   username: external_postgres
   password: external_postgres
